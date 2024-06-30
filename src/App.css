@@ -1,38 +1,123 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #121212;
+  width: 100vw;
+  height: 150vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  padding: 0%;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid grey;
+  display: grid;
+  place-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-family: Arial;
+  color: white;
+  font-size: 50px;
+}
+.game {
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.board {
+  width: 450px;
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  margin: 4px;
+}
+
+.letter {
+  flex: 33%;
+  height: 100%;
+  border: 1px solid grey;
+  margin: 3px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  font-family: Arial;
+}
+
+#correct {
+  background-color: rgb(6, 172, 6);
+}
+
+#almost {
+  background-color: rgb(216, 216, 7);
+}
+
+#error {
+  background-color: rgb(63, 62, 62);
+}
+
+.keyboard {
+  width: 800px;
+  height: 200px;
+  margin-top: 30px;
+}
+
+.line-one {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 4px;
+}
+.line-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4px;
+}
+.line-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+.cell {
+  width: 50px;
+  height: 70px;
+  margin: 5px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  background-color: grey;
+  color: white;
+  font-family: Arial;
+  cursor: pointer;
+}
+
+#big {
+  width: 100px;
+}
+#disabled {
+  background-color: #3a393c;
 }
