@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useContext } from "react";
 import Cell from "./Cell";
-import { Context } from "../App";
+import { Context } from "../../App";
 
 function Keyboards() {
   const { onEnter, onDelete, onSelectLetter, disabledLetters } =

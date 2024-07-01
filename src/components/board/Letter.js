@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { Context } from "../App";
+import { Context } from "../../App";
 
 function Letter({ letterPosition, attemptValue }) {
   const { board, ANSWER, currentAttemp, setDisabledLetters, disabledLetters } =

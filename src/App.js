@@ -1,15 +1,15 @@
 import { createContext, useState } from "react";
 import "./App.css";
-import Board from "./components/Board";
-import Keyboards from "./components/Keyboards";
-import { initialBoard } from "./util";
+import Board from "./components/board/Board";
+import Keyboards from "./components/keyboard/Keyboards";
+import { initialBoard, ANSWER } from "./util";
 import GameOver from "./components/GameOver";
 import Title from "./components/Title";
 
 export const Context = createContext();
 
 function App() {
-  const ANSWER = "PORSS"; // answer is hardcoded
+  // answer is hardcoded ("PORSS") and imported from Util.js
 
   const [board, setBoard] = useState(initialBoard);
   const [currentAttemp, setCurrentAttemp] = useState({

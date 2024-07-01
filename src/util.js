@@ -6,3 +6,5 @@ export const initialBoard = [
   ["", "", "", "", "", ""],
   ["", "", "", "", "", ""],
 ];
+
+export const ANSWER = "PORSS";
