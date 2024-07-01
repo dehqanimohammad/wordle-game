@@ -60,23 +60,23 @@ function App() {
       setGameOver({ gameOver: true, guessedWord: false });
     }
   };
+  const ctxValue = {
+    ANSWER,
+    board,
+    setBoard,
+    currentAttemp,
+    setCurrentAttemp,
+    onDelete,
+    onEnter,
+    onSelectLetter,
+    setDisabledLetters,
+    disabledLetters,
+    gameOver,
+    setGameOver,
+  };
+
   return (
-    <Context.Provider
-      value={{
-        ANSWER,
-        board,
-        setBoard,
-        currentAttemp,
-        setCurrentAttemp,
-        onDelete,
-        onEnter,
-        onSelectLetter,
-        setDisabledLetters,
-        disabledLetters,
-        gameOver,
-        setGameOver,
-      }}
-    >
+    <Context.Provider value={ctxValue}>
       <div className="App">
         <nav>
           <Title />
